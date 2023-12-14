@@ -74,7 +74,7 @@ body{
   object-fit: cover;
 }
 .wrapper .name{
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 500;
   color: #31344b;
   margin: 10px 0 5px 0;
@@ -128,10 +128,10 @@ body{
 .social-icons a.twitter i{
   color: #1DA1F2;
 }
-.social-icons a.insta i{
+.social-icons a.github i{
   color: #E1306C;
 }
-.social-icons a.yt i{
+.social-icons a.linkedin i{
   color: #ff0000;
 }
 .wrapper .buttons{
