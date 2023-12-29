@@ -109,6 +109,7 @@ body {
   display: inline-flex;
   text-decoration: none;
   border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
 .social-icons a:hover::before,
@@ -137,6 +138,10 @@ body {
   width: 100%;
   height: 100%;
   line-height: 40px;
+}
+
+.social-icons a:hover {
+  background-color: #ecf0f3;
 }
 
 .social-icons a.fb i {
@@ -173,7 +178,12 @@ body {
   border-radius: 5px;
   cursor: pointer;
   z-index: 4;
-  background-color: #000000; 
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #333333;
 }
 
 .buttons button:first-child {
@@ -185,7 +195,11 @@ body {
 }
 
 .wrapper .social-share {
-  display: none; 
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 5px;
+  justify-content: space-between;
 }
 
 .social-share .row {
@@ -224,4 +238,3 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
-
