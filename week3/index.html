@@ -25,21 +25,44 @@
       <button>Get Started</button>
     </div>
     <div class="social-share">
-      <div class="row">
+      <div class="row" id="heart">
         <i class="far fa-heart"></i>
         <i class="icon-2 fas fa-heart"></i>
         <span>10.10k</span>
       </div>
-      <div class="row">
-        <i class="far fa-comment"></i>
-        <i class="icon-2 fas fa-comment"></i>
+      <div class="row" id="like">
+        <i class="far fa-like"></i>
+        <i class="icon-2 fas fa-like"></i>
         <span>20.03k</span>
       </div>
-      <div class="row">
+      <div class="row" id="share">
         <i class="fas fa-share"></i>
-        <span>12.10k</span>
       </div>
     </div>
- </div>
+  </div>
+
+  <script>
+    const savedStates = JSON.parse(localStorage.getItem('reactionStates')) || {};
+
+    for (const key in savedStates) {
+      const icon = document.getElementById(key);
+      if (icon) {
+        icon.classList.toggle('reacted', savedStates[key]);
+      }
+    }
+
+    function handleReactionClick(event) {
+      const targetId = event.currentTarget.id;
+      const targetIcon = document.getElementById(targetId);
+
+      targetIcon.classList.toggle('reacted');
+
+      savedStates[targetId] = targetIcon.classList.contains('reacted');
+      localStorage.setItem('reactionStates', JSON.stringify(savedStates));
+    }
+
+    const rows = document.querySelectorAll('.social-share .row');
+    rows.forEach(row => row.addEventListener('click', handleReactionClick));
+  </script>
 </body>
-</html>
+</html> 
