@@ -12,14 +12,14 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #ecf0f3;
+  background: #ffffff;
 }
 
 .wrapper,
 .wrapper .img-area,
 .social-icons a,
 .buttons button {
-  background: #e6e8e9;
+  background: #ffffff;
   box-shadow: -3px -3px 7px #d8d8d8, 3px 3px 5px #d8d8d8;
 }
 
