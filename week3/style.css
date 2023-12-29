@@ -19,8 +19,8 @@ body {
 .wrapper .img-area,
 .social-icons a,
 .buttons button {
-  background: #ecf0f3;
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  background: #8bbde4;
+  box-shadow: -3px -3px 7px #d8d8d8, 3px 3px 5px #d8d8d8;
 }
 
 .wrapper {
@@ -87,12 +87,12 @@ body {
 .wrapper .name {
   font-size: 20px;
   font-weight: 500;
-  color: #31344b;
+  color: #000000;
   margin: 10px 0 5px 0;
 }
 
 .wrapper .about {
-  color: #44476a;
+  color: #000000;
   font-weight: 400;
   font-size: 16px;
 }
@@ -173,7 +173,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   z-index: 4;
-  background-color: #3498db; 
+  background-color: #000000; 
 }
 
 .buttons button:first-child {
