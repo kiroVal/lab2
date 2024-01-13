@@ -288,6 +288,7 @@ section {
 }
 
 .details-container {
+  margin-top: -20px;
   padding: 1.5rem;
   flex: 1;
   background: white;
