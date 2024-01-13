@@ -163,15 +163,20 @@ section {
   height: 80vh;
 }
 
-.profile {
-  border-radius: 2rem;
-}
-
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  align-items: center;
+  justify-content: center;
+  height: 200px; 
+  width: 200px; 
+  border-radius: 50%; 
+  overflow: hidden; 
+}
+
+.about-pic {
+  border-radius: 50%; 
+  max-width: 100%; 
+  height: auto; 
 }
 
 .section__text {
