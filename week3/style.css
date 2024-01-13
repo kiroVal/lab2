@@ -159,9 +159,12 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  border-radius: 2rem;
   gap: 5rem;
   height: 80vh;
+}
+
+.profile {
+  border-radius: 2rem;
 }
 
 .section__pic-container {
