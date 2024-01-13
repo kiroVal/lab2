@@ -173,13 +173,6 @@ section {
   overflow: hidden; 
 }
 
-.about-pic {
-  border-radius: 50%; 
-  max-width: 100%; 
-  height: 100%; 
-  object-fit: cover;
-}
-
 .section__text {
   align-self: center;
   text-align: center;
