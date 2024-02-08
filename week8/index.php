@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+  <!-- New section for PHP lessons -->
+    <section id="php-lessons">
+      <p class="section__text__p1">PHP Lessons</p>
+      <h1 class="title">Class Discussion Conversation</h1>
+      <div class="lesson-container">
+        <h2>1. Introduction</h2>
+        <p>Content for Introduction lesson goes here...</p>
+      </div>
+      <div class="lesson-container">
+        <h2>2. Variables</h2>
+        <p>Content for Variables lesson goes here...</p>
+      </div>
+      <div class="lesson-container">
+        <h2>3. Echo / Print</h2>
+        <p>Content for Echo / Print lesson goes here...</p>
+      </div>
+    </section>
     <nav id="desktop-nav">
       <div class="logo">Welcome</div>
       <div>
