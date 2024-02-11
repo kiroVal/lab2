@@ -9,29 +9,13 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-  <!-- New section for PHP lessons -->
-    <section id="php-lessons">
-      <p class="section__text__p1">PHP Lessons</p>
-      <h1 class="title">Class Discussion Conversation</h1>
-      <div class="lesson-container">
-        <h2>1. Introduction</h2>
-        <p>Content for Introduction lesson goes here...</p>
-      </div>
-      <div class="lesson-container">
-        <h2>2. Variables</h2>
-        <p>Content for Variables lesson goes here...</p>
-      </div>
-      <div class="lesson-container">
-        <h2>3. Echo / Print</h2>
-        <p>Content for Echo / Print lesson goes here...</p>
-      </div>
-    </section>
     <nav id="desktop-nav">
       <div class="logo">Welcome</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#form">Forms</a></li>
         </ul>
       </div>
     </nav>
@@ -46,6 +30,7 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#form" onclick="toggleMenu()">Forms</a></li>
         </div>
       </div>
     </nav>
@@ -131,12 +116,37 @@
         </div>
       </div>
     </section>
+    <section id="form">
+      <h2>PHP Form Validation Example</h2>
+      <p><span class="error">* required field</span></p>
+      <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+        Name: <input type="text" name="name" value="<?php echo $name;?>">
+        <span class="error">* <?php echo $nameErr;?></span>
+        <br><br>
+        E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+        <span class="error">* <?php echo $emailErr;?></span>
+        <br><br>
+        Website: <input type="text" name="website" value="<?php echo $website;?>">
+        <span class="error"><?php echo $websiteErr;?></span>
+        <br><br>
+        Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+        <br><br>
+        Gender:
+        <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+        <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+        <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
+        <span class="error">* <?php echo $genderErr;?></span>
+        <br><br>
+        <input type="submit" name="submit" value="Submit">  
+      </form>
+    </section>
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#form">Forms</a></li>
           </ul>
         </div>
       </nav>
